@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/DotNetAwsEnvCreds.csproj",
+        "${workspaceFolder}/DotNetAwsProfileCreds.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],

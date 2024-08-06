@@ -1,10 +1,10 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using DotNetAwsEnvCreds.Models;
+using DotNetAwsProfileCreds.Models;
 using Amazon.S3;
 using Amazon.S3.Model;
 
-namespace DotNetAwsEnvCreds.Controllers;
+namespace DotNetAwsProfileCreds.Controllers;
 
 public class HomeController : Controller
 {
@@ -27,6 +27,7 @@ public class HomeController : Controller
             Key = "examples/disposition-form-2019-20.doc",
         });
         logger.LogInformation($"Result key is {result.Key}");
+        ViewData["Filename"] = result.Key;
         return View();
     }
 }

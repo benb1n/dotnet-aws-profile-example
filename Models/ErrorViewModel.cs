@@ -1,4 +1,4 @@
-namespace DotNetAwsEnvCreds.Models;
+namespace DotNetAwsProfileCreds.Models;
 
 public class ErrorViewModel
 {
